@@ -1,0 +1,50 @@
+<mat-sidenav-container class="all-wrap" fullscreen>
+  <mat-sidenav #sidenav mode='push'>
+    <mat-list>
+      <mat-list-item>
+        <a href="#" mat-button>
+            <mat-icon>notifications</mat-icon>
+            Notifications
+          </a></mat-list-item>
+        <mat-list-item>
+          <a href="#" mat-button>
+            <mat-icon>message</mat-icon>
+            Messages
+          </a></mat-list-item>
+          <mat-list-item>
+            <button class='option' mat-button (click)="logout()">Logout</button></mat-list-item>
+        <mat-list-item>
+          <a href="#" mat-button>
+            <mat-icon>account_box</mat-icon>
+            My Account
+          </a></mat-list-item>
+    </mat-list>
+  </mat-sidenav>
+  <div class="page-wrap">
+    <header role="banner">
+      <mat-toolbar color="primary" style='width: 100%;'>
+        <mat-toolbar-row>
+        <button type="button" mat-icon-button (click)="sidenav.open()" title="Open sidenav" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+            <h4>Trucking</h4>
+            <span class="example-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+                <a class='option' href="#" mat-button>
+                    <mat-icon>notifications</mat-icon>
+                    Notifications
+                  </a>
+                  <a class='option' href="#" mat-button>
+                    <mat-icon>message</mat-icon>
+                    Messages
+                  </a>
+                  <a class='option' href="#" mat-button>
+                    <mat-icon>account_box</mat-icon>
+                    My Account
+                  </a>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </header>
+</div>
+</mat-sidenav-container> 
